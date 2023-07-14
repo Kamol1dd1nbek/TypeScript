@@ -722,3 +722,17 @@ class StaticClass {
 }
 
 console.log(StaticClass.num); //instance yaratmasdan murojaat qilish mumkin
+
+// ============ end
+
+// Class => constructor, public, protected, private, abstract, static, override
+
+// object types 
+
+// interface
+
+// extends vs implements
+
+// string, number, boolean, null, undefined
+
+// BigInt, Symbol
