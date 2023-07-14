@@ -679,3 +679,46 @@ console.log(uzbek1);
 
 
 // =================== Abstract ====================
+
+abstract class ShaxmatDona {
+    abstract draw(): void;
+    abstract move(): string;
+    info(s: string) {
+        console.log(s);
+    }
+}
+
+// const dona = new ShaxmatDona();
+
+class Fil extends ShaxmatDona {
+    draw(): void {
+        console.log("Chiz");
+    }
+    move(): string {
+        return "Dioganal yur";
+    }
+}
+
+const fil = new Fil();
+fil.info("filcha");
+fil.move();
+
+// ================ implements ==========
+
+interface LoggerService {
+    log: (mes: string) => void;
+}
+
+class Logger implements LoggerService {
+    log(mes: string) {
+        console.log(mes);        
+    }
+}
+
+// ================== static ===========
+
+class StaticClass {
+    static num = 1;
+}
+
+console.log(StaticClass.num); //instance yaratmasdan murojaat qilish mumkin

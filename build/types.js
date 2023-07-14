@@ -363,5 +363,30 @@ uzbek1.dini = "Islom dini";
 console.log(uzbek1.dini);
 uzbek1.age = 44;
 console.log(uzbek1);
+class ShaxmatDona {
+    info(s) {
+        console.log(s);
+    }
+}
+class Fil extends ShaxmatDona {
+    draw() {
+        console.log("Chiz");
+    }
+    move() {
+        return "Dioganal yur";
+    }
+}
+const fil = new Fil();
+fil.info("filcha");
+fil.move();
+class Logger {
+    log(mes) {
+        console.log(mes);
+    }
+}
+class StaticClass {
+}
+StaticClass.num = 1;
+console.log(StaticClass.num);
 export {};
 //# sourceMappingURL=types.js.map
